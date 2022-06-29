@@ -1,0 +1,21 @@
+#include <stdio.h>
+struct employee
+{
+    char name[20],dept[20];
+    float sal;
+    int id,age,mobno;
+}emp[30];
+int main()
+{
+    int i;
+    printf("\n Enter the details:");
+    printf("\n Employee Id: ");scanf("%d",&emp[i].id);
+    printf("\n Depart of Work: ");scanf("%s",emp[i].dept);
+    printf("\n Name: ");scanf("%s",emp[i].name);
+    printf("\n Age: ");scanf("%d",&emp[i].age);
+    printf("\n Phone number: ");scanf("%d",&emp[i].mobno);
+    printf("\n Monthly Income: ");scanf("%f",&emp[i].sal);
+    printf("\nEmployee Details:\n");
+    printf("Employee Id:%d\nDepartment Working:%s\nName of the employee:%s\nAge:%d\nPhone Number:%d\nMonthly Income:%f",emp[i].id,emp[i].dept,emp[i].name,emp[i].age,emp[i].mobno,emp[i].sal);
+    return 0;
+}
